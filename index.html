@@ -107,6 +107,301 @@
     <a href="https://doi.org/10.48366/R692116" target="_blank" class="btn btn-primary mt-5" role="button">Explore these
       tables on ORKG</a>
 
+
+          
+<div id="academic_systems_table">
+  <h2>Comparison of Academic AI-Based Literature Review Systems</h2>
+  <p>
+    Comparison of the surveyed academic systems across category,
+    input/output modalities, Retrieval-Augmented Generation (R),
+    reasoning strategies, citation analysis (CA), and hallucination
+    mitigation mechanisms (HM).
+    Y: Yes, N: No, NA: Not Applicable.
+  </p>
+
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Cat.</th>
+          <th style="padding: 0px 100px;">Input</th>
+          <th style="padding: 0px 130px;">Output</th>
+          <th>R</th>
+          <th style="padding: 0px 150px;">Reasoning Strategy</th>
+          <th>CA</th>
+          <th>HM</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>prismAId</strong></td>
+          <td>SLR</td>
+          <td>Review protocol, criteria, literature, questions, and LLM settings</td>
+          <td>Screening results and structured extraction (CSV/JSON)</td>
+          <td>Y</td>
+          <td>Prompting; optional CoT</td>
+          <td>NA</td>
+          <td>NA</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td><strong>LLAssist</strong></td>
+          <td>LDS</td>
+          <td>Article CSV and research questions</td>
+          <td>Extracted information and relevance scores (JSON/CSV)</td>
+          <td>N</td>
+          <td>Prompt-based relevance assessment</td>
+          <td>NA</td>
+          <td>NA</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td><strong>SLR-auto</strong></td>
+          <td>SLR</td>
+          <td>Research question</td>
+          <td>SLR report with search, screening, extraction, and synthesis results</td>
+          <td>N</td>
+          <td>Multi-agent planning, retrieval, extraction, and compilation</td>
+          <td>NA</td>
+          <td>NA</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td><strong>AutoLit</strong></td>
+          <td>RG</td>
+          <td>Research query and optional PDFs</td>
+          <td>Literature review report</td>
+          <td>Y</td>
+          <td>Sequential multi-agent workflow</td>
+          <td>NA</td>
+          <td>NA</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td><strong>PROMPTHEUS</strong></td>
+          <td>SLR</td>
+          <td>Research topic</td>
+          <td>Summaries, screening reports, topic reports, BibTeX, and LaTeX SLR</td>
+          <td>N</td>
+          <td>LLM generation with deterministic NLP</td>
+          <td>NA</td>
+          <td>NA</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td><strong>LLMSurver</strong></td>
+          <td>SLR</td>
+          <td>Paper corpus (BibTeX/DOIs) and research direction</td>
+          <td>Include/discard decisions, justifications, and consensus labels</td>
+          <td>N</td>
+          <td>Multi-LLM consensus voting</td>
+          <td>NA</td>
+          <td>NA</td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+          <td><strong>LitLLM</strong></td>
+          <td>RG</td>
+          <td>Research idea/abstract; optional keywords and papers</td>
+          <td>Literature review or related-work section with citations</td>
+          <td>Y</td>
+          <td>Plan-based RAG with attribution reranking</td>
+          <td>Y</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>8</td>
+          <td><strong>Valsci</strong></td>
+          <td>LDS</td>
+          <td>Scientific claims</td>
+          <td>Claim-verification report with confidence, evidence, and citations</td>
+          <td>Y</td>
+          <td>RAG, bibliometric evidence scoring, guided CoT</td>
+          <td>Y</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>9</td>
+          <td><strong>SciSage</strong></td>
+          <td>RG</td>
+          <td>Research/survey topic</td>
+          <td>Scientific survey with citations</td>
+          <td>Y</td>
+          <td>Hierarchical multi-agent reasoning and iterative refinement</td>
+          <td>Y</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>10</td>
+          <td><strong>OpenScholar</strong></td>
+          <td>LDS</td>
+          <td>Scientific question/query</td>
+          <td>Citation-backed scientific answers and literature synthesis</td>
+          <td>Y</td>
+          <td>RAG, reranking, self-reflection</td>
+          <td>NA</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>11</td>
+          <td><strong>ARISE</strong></td>
+          <td>RG</td>
+          <td>Research/survey topic</td>
+          <td>Complete scholarly survey paper</td>
+          <td>Y</td>
+          <td>Iterative multi-agent retrieval, drafting, editing, and rubric-based review</td>
+          <td>NA</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>12</td>
+          <td><strong>GPT-Researcher</strong></td>
+          <td>RG</td>
+          <td>Research question/task</td>
+          <td>Long-form report (&gt;2,000 words); Markdown, PDF, DOCX, JSON, etc.</td>
+          <td>Y</td>
+          <td>Agentic planner-executor workflow</td>
+          <td>NA</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>13</td>
+          <td><strong>AutoSurvey</strong></td>
+          <td>RG</td>
+          <td>Survey/research topic</td>
+          <td>Complete literature survey</td>
+          <td>Y</td>
+          <td>Parallel generation with iterative reflection and revision</td>
+          <td>NA</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>14</td>
+          <td><strong>auto_research</strong></td>
+          <td>RG</td>
+          <td>Research/survey topic</td>
+          <td>IEEE-formatted survey (LaTeX, BibTeX, figures)</td>
+          <td>Y</td>
+          <td>RAG, structured planning, iterative refinement</td>
+          <td>NA</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>15</td>
+          <td><strong>SurveyX</strong></td>
+          <td>RG</td>
+          <td>Survey title and keywords</td>
+          <td>Academic survey (LaTeX/PDF)</td>
+          <td>Y</td>
+          <td>Sequential RAG pipeline with iterative refinement</td>
+          <td>NA</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>16</td>
+          <td><strong>SurveyForge</strong></td>
+          <td>RG</td>
+          <td>Survey topic</td>
+          <td>Academic survey</td>
+          <td>Y</td>
+          <td>Heuristic outlining, memory-based retrieval, parallel generation, refinement</td>
+          <td>Y</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>17</td>
+          <td><strong>SurveyGen</strong></td>
+          <td>RG</td>
+          <td>Survey topic</td>
+          <td>Scientific survey</td>
+          <td>Y</td>
+          <td>Quality-aware RAG and outline-guided generation</td>
+          <td>Y</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>18</td>
+          <td><strong>AutoReviewGen</strong></td>
+          <td>RG</td>
+          <td>Research topic, keywords, optional filters</td>
+          <td>Structured review, extracted knowledge, statistics, comparisons</td>
+          <td>Y</td>
+          <td>Sequential extraction and hierarchical review composition</td>
+          <td>NA</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>19</td>
+          <td><strong>InteractiveSurvey</strong></td>
+          <td>RG</td>
+          <td>Survey topic and/or uploaded PDFs</td>
+          <td>Multimodal survey (PDF/Markdown/LaTeX)</td>
+          <td>Y</td>
+          <td>RAG, hierarchical outlining, interactive refinement</td>
+          <td>NA</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>20</td>
+          <td><strong>SurveyGen-I</strong></td>
+          <td>RG</td>
+          <td>Survey topic; optional explanation</td>
+          <td>Complete scientific survey</td>
+          <td>Y</td>
+          <td>Coarse-to-fine retrieval, adaptive planning, memory-guided writing, refinement</td>
+          <td>Y</td>
+          <td>Y</td>
+        </tr>
+
+        <tr>
+          <td>21</td>
+          <td><strong>ReviewCopilot</strong></td>
+          <td>SLR</td>
+          <td>Deduplicated CSV/PDFs and PICOS eligibility criteria</td>
+          <td>Include/exclude decisions with explanations</td>
+          <td>N</td>
+          <td>PICOS-based rule-guided reasoning</td>
+          <td>NA</td>
+          <td>NA</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      R: Retrieval-Augmented Generation;
+      CA: Citation Analysis;
+      HM: Hallucination Mitigation;
+      Y: Yes; N: No; NA: Not Applicable.
+    </p>
+  </div>
+
+  <a href="#intro" class="btn btn-primary mt-5" role="button">Go up</a>
+</div>
+
+          
     <div id="first_table">
       <h2>Screening Phase of Systematic Literature Review Tools analysed through AI Features</h2>
       <p></p>
