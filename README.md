@@ -1,5 +1,4 @@
-# ai-slr
-AI-enhanced Systematic Literature Reviews Tools: A Survey
+# llm_lr
+Generative AI for Literature Reviews: A Systematic Survey of Academic and Commercial Systems
 
-
-You can visit this repo as a webpage: [https://angelosalatino.github.io/ai-slr/](https://angelosalatino.github.io/ai-slr/)
+You can visit this repo as a webpage: [https://chakerjebari.github.io/llm_lr/]
