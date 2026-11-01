@@ -977,6 +977,220 @@
     </p>
   </div>
 
+
+        
+<div id="academic_eval_reprod_table">
+
+    <h2>Evaluation Methods, Benchmarks, and Reproducibility</h2>
+
+    <p>
+        This table summarizes the evaluation methods, benchmarks, and reproducibility
+        of the surveyed academic literature review systems.
+        <strong>Cat.</strong>: Category
+        (SLR = Systematic Literature Review, RG = Review Generation,
+        LDS = Literature Discovery &amp; Search).
+        <strong>Evaluation Method</strong>: Assessment approach and reported metrics,
+        including quantitative, comparative, experimental/case study, human/user study,
+        expert, and qualitative evaluations.
+        <strong>Benchmark</strong>: Evaluation dataset or standardized benchmark used.
+        <strong>Reprod.</strong>: Reproducibility level.
+        High = public source code, documentation, and experimental/evaluation resources
+        support full reproduction; Partial = implementation or partial artefacts are
+        available, but missing evaluation data, configuration requirements, or external
+        dependencies limit independent replication; Low = complete datasets and
+        evaluation artefacts are lacking or unclear.
+    </p>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Cat.</th>
+                    <th>Evaluation Method</th>
+                    <th>Benchmark</th>
+                    <th>Reprod.</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>prismAId</strong></td>
+                    <td>SLR</td>
+                    <td>Quantitative / experimental</td>
+                    <td>SLR experiments and case studies; no dedicated standardized benchmark identified.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>LLAssist</strong></td>
+                    <td>LDS</td>
+                    <td>Quantitative</td>
+                    <td>Literature-relevance experiments; no dedicated public benchmark reported.</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>SLR-auto</strong></td>
+                    <td>SLR</td>
+                    <td>Quantitative / comparative</td>
+                    <td>Systematic-review datasets and case studies; no widely recognized dedicated benchmark identified.</td>
+                    <td>Partial</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>AutoLit</strong></td>
+                    <td>RG</td>
+                    <td>Quantitative / experimental</td>
+                    <td>No standardized benchmark identified.</td>
+                    <td>Partial</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>PROMPTHEUS</strong></td>
+                    <td>SLR</td>
+                    <td>Quantitative / comparative</td>
+                    <td>Five domains.</td>
+                    <td>Partial</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>LLMSurver</strong></td>
+                    <td>SLR</td>
+                    <td>Quantitative / comparative</td>
+                    <td>Survey/review-generation experiments; no dedicated standardized benchmark reported.</td>
+                    <td>Partial</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>LitLLM</strong></td>
+                    <td>RG</td>
+                    <td>Quantitative / comparative</td>
+                    <td>Related-work generation using retrieved papers; no dedicated standardized benchmark identified.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>Valsci</strong></td>
+                    <td>RG</td>
+                    <td>Quantitative / human</td>
+                    <td>Scientific-claim verification, including biomedical, bioinformatics, and Cochrane Review-derived claims.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><strong>SciSage</strong></td>
+                    <td>LDS</td>
+                    <td>Quantitative / qualitative</td>
+                    <td>Survey-generation tasks across research areas, assessed against reference material.</td>
+                    <td>Partial</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><strong>OpenScholar</strong></td>
+                    <td>LDS</td>
+                    <td>Quantitative / expert</td>
+                    <td><em>ScholarQABench</em>, scientific question answering across fields, assessing answer quality, citations, relevance, organization, and evidence coverage.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><strong>ARISE</strong></td>
+                    <td>RG</td>
+                    <td>Expert / quantitative</td>
+                    <td>Human-written surveys across topics, assessed by experts and reference comparisons.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td><strong>GPT-Researcher</strong></td>
+                    <td>RG</td>
+                    <td>Quantitative / comparative</td>
+                    <td>Research question-answering and deep-research evaluation tasks.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td><strong>AutoSurvey</strong></td>
+                    <td>RG</td>
+                    <td>Quantitative / comparative</td>
+                    <td>Scientific survey-generation tasks and reference surveys.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td><strong>auto_research</strong></td>
+                    <td>RG</td>
+                    <td>Experimental / case study</td>
+                    <td>Research experiments and case studies; no dedicated public benchmark clearly identified.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td><strong>SurveyX</strong></td>
+                    <td>RG</td>
+                    <td>Quantitative / comparative</td>
+                    <td>Survey-generation experiments using reference literature; no dedicated standardized benchmark identified.</td>
+                    <td>Partial</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td><strong>SurveyForge</strong></td>
+                    <td>RG</td>
+                    <td>Quantitative / human</td>
+                    <td><em>SurveyBench</em>, approximately 100 human-written surveys across 10 topics.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td><strong>SurveyGen</strong></td>
+                    <td>RG</td>
+                    <td>Quantitative / comparative</td>
+                    <td>Over 4,200 human-written scientific surveys across domains, including structures and references.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td><strong>AutoReviewGen</strong></td>
+                    <td>RG</td>
+                    <td>Quantitative / qualitative</td>
+                    <td>Review-generation tasks and reference reviews; no dedicated standardized benchmark identified.</td>
+                    <td>Partial</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td><strong>InteractiveSurvey</strong></td>
+                    <td>RG</td>
+                    <td>User study / qualitative</td>
+                    <td>Interactive survey-generation experiments focused on quality and usefulness; no dedicated standardized benchmark reported.</td>
+                    <td>Partial</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td><strong>SurveyGen-I</strong></td>
+                    <td>RG</td>
+                    <td>Human / user / comparative</td>
+                    <td>Survey-generation tasks across topics, compared with human-written or reference material.</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td><strong>ReviewCopilot</strong></td>
+                    <td>SLR</td>
+                    <td>Human / quantitative</td>
+                    <td>Real systematic reviews and meta-analyses, mainly in health research.</td>
+                    <td>High</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+
+    <a href="#intro" class="btn btn-primary mt-5" role="button">Go up</a>
+
+</div>
+
   <a href="#intro" class="btn btn-primary mt-5" role="button">
     Go up
   </a>
