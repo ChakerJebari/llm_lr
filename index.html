@@ -1249,77 +1249,7 @@
           
    
 
-    <div id="second_table">
-      <h2>Extraction phase of Systematic Literature Review Tools analysed through AI Features</h2>
-      <p></p>
-      <div>
-        <table>
-          <thead>
-            <tr class="d-flex">
-              <th>Tool</th>
-              <th>Research Field</th>
-              <th>SLR Task</th>
-              <th style="padding: 0px 100px;">Approach</th>
-              <th>Text Representation</th>
-              <th>Input</th>
-              <th style="padding: 0px 100px;">Output</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>RobotReviewer/RobotSearch</td>
-              <td>Biomedical</td>
-              <td>Identifies risks of bias: how reliable are the results?</td>
-              <td>ML classifier, combining a lineal model and a Convolutional Neural Network (CNN) model. <br> These
-                models are trained on a dataset containing manually annotated sentences stating the level of bias.</td>
-              <td>Bag of word: ngrams.<br> Embeddings: embedding layer from CNN Model.</td>
-              <td>Full-text paper.</td>
-              <td>Risk of bias classification (as Low, High, Unclear)</td>
-            </tr>
-            <tr>
-              <td>ExaCT</td>
-              <td>Biomedical</td>
-              <td>NER of Randomised Controlled Trials</td>
-              <td>Task 1: ML classifier based on SVM to identify sentences regarding a control trial.<br> Task 2: Rule
-                base detection to identify the 21 CONSORT categories.</td>
-              <td>Bag of words: ngrams.</td>
-              <td>Full-text paper.</td>
-              <td>Possible RCT entities</td>
-            </tr>
-            <tr>
-              <td>Dextr</td>
-              <td>Environmental Health Science</td>
-              <td>Task 1: NER of animal studies.<br> Task 2: Entity linking of animal studies.</td>
-              <td>Task 1: ML Classifier implementing a neural network model based on bidirectional LSTM with a
-                Conditional
-                Random Field (BI-LSTM-CRF) architecture.<br> Task 2: Linking according to a customised ontology</td>
-              <td>Task 1: Embeddings: GloVe, ELMo.<br> Task 2: Not Applicable.</td>
-              <td>Title and Abstracts</td>
-              <td>Task 1: Possible animal entities.<br> Task 2: Relationships of animal models and exposures vs
-                experimentas ot endpoints vs experiments.</td>
-            </tr>
-            <tr>
-              <td>Iris.ai</td>
-              <td>Any</td>
-              <td>Task 1: NER of entities selected by the user.<br> Task 2: Entity linking of the identified entities.
-              </td>
-              <td>Task 1: ML classifier. Algorithim is unknown.<br> Task 2: Uses a knowledge graph to represent the
-                relations of within the entities on the paper or between the entities of the table. The technical
-                implementation is unknown.</td>
-              <td>Task 1: Embeddings: word embedding.<br> Task 2: Not Applicable.</td>
-              <td>Full-text paper.</td>
-              <td>Task 1: Possible entities based on a confidence interval.<br> Task 2: Additional semantics on the
-                extracted entities.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <a href="#intro" class="btn btn-primary mt-5" role="button">Go up</a> <a href="./files/SLR Tools Analysis.xlsx"
-        class="btn btn-primary mt-5" role="button">Download Table</a>
-        <a href="https://orkg.org/comparison/R675539"
-        class="btn btn-primary mt-5" role="button">Browse Table on ORKG</a>
-    </div>
-
+    
 
    
 
